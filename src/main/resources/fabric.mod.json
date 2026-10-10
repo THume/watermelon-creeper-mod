@@ -7,6 +7,11 @@
 	"authors": [
 		"Mooseman"
 	],
+	"contact": {
+		"homepage": "https://github.com/THume/watermelon-creeper-mod",
+		"sources": "https://github.com/THume/watermelon-creeper-mod",
+		"issues": "https://github.com/THume/watermelon-creeper-mod/issues"
+	},
 	"license": "MIT",
 	"icon": "assets/watermelon-creeper/icon.png",
 	"environment": "*",
