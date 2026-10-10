@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"id": "watermelon-creeper",
+	"version": "${version}",
+	"name": "Watermelon Creeper",
+	"description": "Adds a rare watermelon-themed Creeper that bursts into melon slices and transforms nearby terrain into watermelons.",
+	"authors": [
+		"Mooseman"
+	],
+	"license": "MIT",
+	"icon": "assets/watermelon-creeper/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.tony.watermeloncreeper.WatermelonCreeper"
+		],
+		"client": [
+			"com.tony.watermeloncreeper.client.WatermelonCreeperClient"
+		]
+	},
+	"mixins": [
+		"watermelon-creeper.mixins.json",
+		{
+			"config": "watermelon-creeper.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~26.3",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
